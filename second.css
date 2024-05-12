@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'SokchoBadaBatang';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/SokchoBadaBatang.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.second {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    width: 100%;
+    max-width: var(--width-max);
+    margin: 0 auto;
+  }
+
+  .container > h4 {
+    color: #555;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .introduce--boxs {
+    display: flex;
+    gap: 30px;
+  }
+
+  .introduce--box{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .introduce--box > .imageBox {
+    width: 240px;
+    height: 120px;
+  }
+  
+  .introduce--box > .imageBox > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .introduce--box > span {
+    font-size: 24px;
+    color: var(--color-grey);
+    font-family: 'SokchoBadaBatang';
+    font-weight: bold;
+  }
+  
+  .introduce--box > p {
+    font-size: var(--font-small);
+    color: var(--color-lightgrey);
+    font-family: 'SokchoBadaBatang';
+    line-height: 1.3;
+  }
+
+  @media screen and (max-width: 768px){
+    .introduce--boxs{
+        max-width: var(--maxwidth--mobile);
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+  }

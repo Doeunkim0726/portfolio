@@ -1,0 +1,78 @@
+.third{
+    width: 100vw;
+    padding: 120px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+    font-size: 24px;
+    font-weight: bold;
+}
+.third > .vision--cardLayout{
+    width: 1000px;
+    height: 900px;
+    max-width: var(--maxwidth--desktop);
+    margin: 0 auto;
+    height: 856px;
+
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.vision--cardLayout--box{
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow: rgba(0, 0, 0, 0.08) 0rem 0.25rem 3rem;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 24px;
+}
+
+.vision--cardLayout > div:nth-child(1) {
+    grid-area: 1 / 1 / 7 / 7;
+    background-image: url(dog1.jfif);
+    object-fit: cover;
+    }
+
+.vision--cardLayout > div:nth-child(2) {
+    grid-area: 1 / 7 / 6 / 11; 
+   background-image: url(dog2.jfif);
+   object-fit: cover;
+}
+.vision--cardLayout > div:nth-child(3) { 
+    grid-area: 7 / 1 / 11 / 7; 
+   background-image: url(dog3.jfif);
+   object-fit: cover;
+}
+.vision--cardLayout > div:nth-child(4) { 
+    grid-area: 6 / 7 / 11 / 11; 
+   background-image: url(dog4.jfif);
+   background-position: 50% 48%;
+   object-fit: cover;
+}
+
+@media screen and (max-width: 768px){
+    .vision--cardLayoutd{
+        max-width: var(--maxwidth--mobile);
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .vision--cardLayout--box{ 
+        height: 400px;
+        width: 100%;
+    }
+}
